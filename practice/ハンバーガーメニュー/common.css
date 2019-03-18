@@ -1,0 +1,121 @@
+@charset "UTF8";
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr,
+ address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var,
+ b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot,
+ thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, menu, nav, section,
+ time, mark, audio, video{
+margin: 0;
+padding: 0;
+border:0;
+outline: 0;
+font-size:1em;
+ }
+li{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.clear-fix{
+  clear:both;
+}
+
+
+header{
+    background-color: #000;
+    height: 60px;
+    width:100%;
+    position: fixed;
+    z-index: 999;
+}
+.header{
+  width:80%;
+  margin: 0 auto;
+}
+.logo{
+    float: left;
+    margin-left: 4%;
+}
+#hidden-menu{
+    display:none;
+    float: right;
+    margin-right: 4%;
+}
+.global-nav{
+    float: right;
+    margin-right: 4%;
+}
+.global-nav li{
+    float: left;
+    list-style: none;
+    width:100px;
+    text-align:center;
+
+}
+.global-nav li a{
+  color:#fff;
+  margin-top:20px;
+  text-align: center;
+  display: block;
+  width:100%;
+  border-right: solid 1px #fff;
+}
+.global-nav li:first-child a{
+  border-left:solid 1px #fff;
+}
+
+
+/* スマホーーーーーーーーーーーーーーーーー */
+@media (max-width:768px){
+    .header{
+      width:100%;
+    }
+    #hidden-menu{
+      display: block;
+      margin-top: 2%;
+      background:url('images/menu.png') no-repeat;
+      width:40px;
+      height: 27px;
+    }
+    #hidden-menu.on{
+      display: block;
+      margin-top: 2%;
+      background: url('images/close.png') no-repeat;
+      width:40px;
+      height: 30px;
+    }
+    .global-nav{
+      float: none;
+      width:100%;
+    }
+    .global-nav li{
+      display: none;
+    }
+    .global-nav li.on{
+      display: block;
+      width:100%;
+      text-align:left;
+      height: 60px;
+      border-right:none;
+      border-bottom: solid 1px #fff;
+      background-color: #000;
+
+    }
+    .global-nav li:first-child a{
+      border-left: none;
+    }
+    .global-nav li a{
+      margin: 0;
+      line-height: 60px;
+      text-align: left;
+      margin-left: 4%;
+      overflow: hidden;
+    }
+}
+@media (max-width:420px){
+  #hidden-menu{
+    display: block;
+    margin-top: 4%;
+  }
+}

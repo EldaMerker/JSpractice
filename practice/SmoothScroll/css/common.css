@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+header{
+  border-bottom: solid 1px #fff;
+  height: 8vh;
+  position: fixed;
+  z-index: 999;
+  width:100%;
+}
+.header-inner{
+  width:960px;
+  margin: 0 auto;
+}
+
+.header-inner p{
+  font-size: 24px;
+  letter-spacing: 2px;
+  float: left;
+  line-height: 60px;
+  color: #fff;
+}
+.header-inner ul{
+  float: right;
+}
+.header-inner  li{
+  float: left;
+  padding-right: 20px;
+  margin-top: 10px;
+  color: #fff;
+}
+.header-inner li:last-child{
+  padding:0;
+}
+#mainvidual{
+  background:url(../img/hellsing-bg.jpg) no-repeat;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  display: table;
+}
+#mainvidual h1{
+  width:100%;
+  display: table-cell;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 48px;
+}
+#scroll-btn{
+  position: absolute;
+  bottom:0;
+  left:48%;
+}
+.wrapper{
+  height: 600px;
+  background-color: #000;
+  color:#fff;
+}
+#scroll-top-btn{
+  width:80px;
+  height: 50px;
+  border:solid 1px #fff;
+  text-align:center;
+  position: fixed;
+  right:0;
+  top:80%;
+}
+#scroll-top-btn a{
+  display: block;
+  color:#fff;
+}
+#scroll-top-btn a:hover{
+  text-decoration: underline;
+}
+.sub-wrapper{
+  height: 600px;
+}
