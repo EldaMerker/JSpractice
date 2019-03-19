@@ -1,8 +1,7 @@
 $(function(){
   $('#drop').hover(function() {
    $('.drop-menu').slideDown();
- },);
-  $('.drop-menu li').mouseout(function(){
+ },function(){
    $('.drop-menu').slideUp();
 });
 
