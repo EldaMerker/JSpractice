@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>iMac Apple（日本）</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/iMac.css">
+
+
+
+  </head>
+  <body>
+<!-- 全体***************************-->
+<div class="score-box">
+<!-- left-box********************** -->
+    <div class="tab-nav">
+<!-- left-box-inner**************** -->
+      <div class="tab-nav-inner">
+      <ul>
+        <li><a href="">Maxon Cinema 4D</a></li>
+        <li><a href="">OsiriX MD</a></li>
+        <li><a href="">Blackmagic DaVinci <br>Resolve Studio</a></li>
+        <li><a href="">Final Cut Pro X<br>(3Dレンダリング)</a></li>
+        <li><a href="">Final Cut Pro X<br>(マルチカム編集)</a></li>
+        <li><a href="">Rise of the Tomb Raider</a></li>
+        <li><a href="">F1 2017</li>
+      </ul>
+    </div>
+<!-- ends-left-box*************** -->
+    </div>
+
+
+<!-- right-box********************** -->
+ <div class="graph-box">
+<!-- right-box-inner*********** -->
+  <div class="right-box">
+    <div class="tab-graph">
+        <h1>21.5インチiMac Retina 4Kディスプレイモデル</h1>
+        <div class="thermometer" data-percent="100" data-speed="500" ></div>
+        <p>Radeon Pro Vega 20を搭載した6コアiMac</p>
+
+        <div class="thermometer graph2" data-percent="50" data-speed="1000"></div>
+        <p>Radeon Pro 560を搭載したクアッドコアiMac（基準値）</p>
+    </div>
+<!-- right-box-inner-right ***********-->
+    <div class="tab-score percent1">
+      <h1>80<sup>%</sup></h1>
+      <p>速いレンダリング<br>（ProRenderを<br>使用）<sup>11</sup></p>
+    </div>
+  </div>
+
+<div class="clear-fix"></div>
+
+  <div class="right-box">
+    <div class="tab-graph">
+        <h1>27インチiMac Retina 5Kディスプレイモデル</h1>
+        <div class="thermometer" data-percent="100" data-speed="1400" ></div>
+        <p>Radeon Pro Vega 48を搭載した8コアiMac</p>
+
+        <div class="thermometer graph2" data-percent="70" data-speed="2000"></div>
+        <p>Radeon Pro 580を搭載したクアッドコアiMac（基準値）</p>
+    </div>
+<!-- right-box-inner-right ***********-->
+    <div class="tab-score percent2">
+      <h1>40<sup>%</sup></h1>
+      <p>速いレンダリング<br>（ProRenderを<br>使用）<sup>11</sup></p>
+    </div>
+  </div>
+
+<!-- ends-right-box *************************-->
+ </div>
+<!-- **********ends-全体*********************-->
+</div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.thermometer.js"></script>
+    <script>
+$(document).ready(function() {
+  $('.thermometer').thermometer();
+});
+</script>
+  </body>
+</html>
