@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+
+/* <!-- 全体***************************--> */
+.score-box{
+  width:1080px;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+/* <!-- left-box********************** --> */
+.tab-nav{
+  width:320px;
+  float: left;
+}
+
+/* <!-- left-box-inner**************** --> */
+.tab-nav-inner{
+  width:300px;
+  font-weight: bold;
+  font-size: 22px;
+}
+.tab-nav-inner ul li{
+  margin-bottom: 30px;
+  line-height: 1.3;
+}
+.tab-nav-inner ul li a {
+  color: #888;
+}
+.tab-nav-inner li a:hover{
+  color: #666;
+}
+/* <!-- right-box********************** --> */
+
+.graph-box{
+  width:760px;
+  float: right;
+}
+/* <!-- right-box-inner-left*********** --> */
+.tab-graph{
+  width: 500px;
+  color: #666;
+  float: left;
+}
+.tab-graph h1{
+  font-weight: bold;
+  border-bottom: solid 1px #666;
+  padding:10px 0;
+  font-size: 14px;
+  color:#000;
+}
+
+/* <!-- thermometer *********************** -->*/
+.thermometer-outer {
+  margin: 20px auto 10px;
+  /* background: #c4f0ff; */
+  /* border: 1px solid #c4c4c4; */
+  border-radius: 3px;
+}
+.thermometer-outer-h {
+  height: 7px;
+  width: 100%;
+}
+.thermometer-outer-v {
+  height: 200px;
+  width: 20px;
+}
+.thermometer-inner {
+  background: #FFA500;
+}
+.thermometer-inner-h {
+  height: 7px;
+}
+.thermometer-inner-v {
+  width: 7px;
+}
+/* <-- ends-thermometer************** -->*/
+
+.tab-graph p{
+  font-size: 14px;
+}
+.graph2{
+  padding-top: 20px;
+}
+
+
+/* <!-- right-box-inner-right ***********--> */
+.tab-score{
+  width:180px;
+  float: right;
+  color:#000;
+  text-align:left;
+  display: block;
+}
+.tab-score h1{
+  width:111px;
+}
+.tab-score h1{
+  font-size: 48px;
+  border-top: solid 1px #666;
+}
+.tab-score p{
+  font-size: 12px;
+  display: block;
+  padding: 5px 0 150px;
+}
+.percent1{
+  padding-top:34px;
+}
+.percent2{
+  padding-top:36px;
+}

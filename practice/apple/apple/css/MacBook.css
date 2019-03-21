@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+
+.buy-inner{
+  width:980px;
+  margin: 0 auto;
+  border-bottom: solid 1px #666;
+  height: 52px;
+
+}
+.buy-inner h1{
+  float: left;
+  font-weight: bold;
+  line-height: 52px;
+}
+.buy-inner ul{
+  float: right;
+}
+.buy-inner li{
+  float: left;
+  line-height: 52px;
+  margin-left: 24px;
+}
+#macTtl{
+  width:980px;
+  margin: 76px auto 0;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+#macTtl h1{
+  font-weight: bold;
+  font-size:36px;
+  margin-bottom: 8px;
+}
+#macTtl h2{
+  font-weight: bold;
+  font-size: 64px;
+}
+#macbook-images{
+  width:980px;
+  height:350px;
+  margin: 0 auto;
+  background: url(img/over-view/hero_medium_2x.jpg) no-repeat;
+  box-sizing: border-box;
+  width:965px;
+  height:341px;
+}
+
+
+/* プラグインcss */
+#animation {
+margin: 50px 0;
+font-weight: bold;
+}
+.fadeInDown {
+ -webkit-animation-fill-mode:both;
+ -ms-animation-fill-mode:both;
+ animation-fill-mode:both;
+ -webkit-animation-duration:1s;
+ -ms-animation-duration:1s;
+ animation-duration:1s;
+ -webkit-animation-name: fadeInDown;
+ animation-name: fadeInDown;
+ visibility: visible !important;
+}
+@-webkit-keyframes fadeInDown {
+ 0% { opacity: 0; -webkit-transform: translateY(-20px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+@keyframes fadeInDown {
+ 0% { opacity: 0; -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
+ 100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
+}
