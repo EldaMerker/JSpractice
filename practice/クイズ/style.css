@@ -1,0 +1,53 @@
+body {
+  background-color:#ccffcc;
+}
+
+#index {
+  text-align: center;
+  font-size: 24px;
+}
+
+#titleImg {
+  height: 300px;
+  width: auto;
+}
+
+#word {
+  text-align: center;
+}
+
+#question {
+  text-align: center;
+}
+
+#ans {
+  text-align: center;
+}
+
+#imgs {
+  text-align: center;
+}
+
+#img1 {
+  height: 200px;
+  width: auto;
+}
+
+#img2 {
+  height: 200px;
+  width: auto;
+}
+
+#img3 {
+  height: 200px;
+  width: auto;
+}
+
+#img4 {
+  height: 200px;
+  width: auto;
+}
+
+#link {
+  text-align: center;
+}
