@@ -1,12 +1,6 @@
 @charset "UTF-8";
 
-.jump {
-  text-decoration: none;
-  display: block;
-}
-.jump:hover{
-  text-decoration: underline;
-}
+/* header*********** */
 header{
   background: rgba(45,45,45,0.98);
   height: 44px;
@@ -16,8 +10,11 @@ header a{
   color:#fff;
   font-weight: lighter;
   font-size:12px;
+  transition: 0.3s;
 }
-
+header a:hover{
+  color:#666;
+}
 .header-inner{
   width:1080px;
   margin: 0 auto;
@@ -30,6 +27,7 @@ header a{
 }
 
 
+/* main-vidual************* */
 .main-vidual-inner{
     background:#fafafa;
     width:100%;
@@ -39,7 +37,6 @@ header a{
   width:692px;
   margin: 0 auto;
   padding-top: 3em;
-  padding-bottom: 3.1em;
   text-align:center;
 
 }
@@ -53,28 +50,25 @@ header a{
   margin: 0 auto;
   margin-bottom: 1em;
 }
-.main-vidual-inner a{
-   color:#0070c9;
-}
-.main-vidual-inner a::after{
-  content:">";
-  left:10px;
-  color: #0070c9;
-}
+
 .main-vidual-inner h2{
-  font-size: 28px;
+  font-size: 24px;
   line-height:1.21875;
-  /* letter-spacing: 0.07em; */
   font-weight: 600;
   margin-bottom: .2em;
 }
+
+.main-vidual-inner a{
+   color:#0070c9;
+}
+
 .small{
   font-variant-caps: all-small-caps;
 }
 .nowwrap{
   display: inline-block;
-text-decoration: inherit;
-white-space: nowrap;
+  text-decoration: inherit;
+  white-space: nowrap;
 }
 sup{
   font-size: 0.6em;
@@ -83,40 +77,286 @@ sup{
 .main-vidual-inner p{
   line-height:1.7;
   margin-bottom: .65em;
+  font-size: 20px;
 }
-/* .box2-jump{
+.box1{
+  padding-bottom:3.1em;
+}
+.box1 a{
+  text-decoration: none;
+  display: block;
+  z-index: 4;
+  position: relative;
+  width:130px;
+  margin: 0 auto;
+  text-align: left;
+}
+.box1 a::after{
+  content:">";
+  position: absolute;
+  right: 0;
+  top:-2px;
+}
+.box1 a:hover{
+  text-decoration: underline;
+}
+
+/* aタグ************* */
+.box2-jump{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
   width:100%;
   height: 100%;
-} */
-.jump-menu{
-  width:180px;
-  margin: 0 auto;
+  z-index:4;
 }
-.box2 a{
+.box2 a {
   float: left;
+}
 
+.jump-menu{
+  width:200px;
+  margin: 0 auto;
+  z-index: 4;
+}
+
+.jump-menu a{
+  text-decoration: none;
+  display: block;
+  z-index: 4;
+  position: relative;
+  float: left;
+}
+.jump-menu a:first-child{
+  width:130px;
 }
 .jump-menu a:last-child{
-  margin-left: 20px;
+  width:70px;
+}
+.jump-menu:hover{
+  text-decoration: underline;
+}
+.jump-menu a::after{
+  position: absolute;
+  content:">";
+  right: 0;
+  top:-1px;
+  color: #0070c9;
+}
+.inner2 {
+  position: relative;
 }
 .box2 h2,p{
- color:#000;
+  color:#000;
 }
 .box2 h2{
-  font-size: 3em;
+  font-size: 48px;
 }
 .iphone-images{
+  margin-top: 60px;
   width: 692px;
- height: 426px;
- background: url(../img/home/apple_watch_series_4_4aeff__f1uc849molqq_mediumtall_2x) no-repeat;
- background-size: 692px 426px;
+  height: 426px;
+  background: url(../img/over-view/iphone_xr__b0z59ak0bqdy_largetall_2x.jpg) no-repeat;
+  background-size: 692px 426px;
 }
-.float-box{
-  float:left;
-  width:50%;
-}
+
 .sub-ttl{
   font-size: 0.6em;
   letter-spacing: 1.3px;
   color:red;
+}
+.iphoneXs-images{
+  margin-top: 60px;
+  width: 692px;
+  height: 390px;
+  background: url(../img/over-view/iphone_xs__cm637qa5dno2_largetall_2x.jpg) no-repeat;
+  background-size: 692px 390px;
+}
+.ipad-images{
+  margin-top: 60px;
+  width: 692px;
+  height: 426px;
+  background: url(../img/over-view/ipad_air_hero__csmc7ugxq32a_largetall_2x.jpg) no-repeat;
+  background-size: 692px 426px;
+}
+/* ６分割のやつ************* */
+.six-boxes{
+  width:99%;
+  margin: 0 auto;
+  padding:0 0.5%;
+}
+
+.six-boxes-inner{
+  width:49%;
+  margin:0.5%;
+  height: 580px;
+  overflow: hidden;
+  float: left;
+}
+.inner-txt{
+  color:#fff;
+  text-align: center;
+}
+/* ***********ボックス１*********** */
+.image1{
+  background: url(../img/over-view/march_event_2019__fyoxvr9eucuq_medium_2x.jpg)no-repeat;
+  background-size:  cover;
+}
+.image1 > .inner-txt{
+  display: block;
+  padding-top: 60%;
+}
+.image1 h1{
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.image1 h2{
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.image1 a{
+  color:#66BBFF;
+  display: block;
+  z-index: 4;
+  position: relative;
+  width:200px;
+  margin: 0 auto;
+}
+.image1 a:hover{
+  text-decoration: underline;
+}
+.image1 a::after{
+  position: absolute;
+  content:">";
+  right: 0;
+  color:#66BBFF;
+}
+/* ***********ボックス２******************* */
+.image2{
+  background: url(../img/over-view/apple_tv_plus_tile__5j9ak2o1rrm6_medium_2x.jpg)no-repeat;
+  background-size: cover;
+}
+.image2 > .inner-txt{
+  display: block;
+  padding-top:7%;
+}
+.image2 h1{
+  font-size:32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.image2 h2{
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+.image2 a{
+  color:#fff;
+  width:130px;
+  margin: 0 auto;
+  position: relative;
+}
+.image2 a:hover{
+  text-decoration: underline;
+}
+.image2 a::after{
+  position: absolute;
+  content:">";
+  top:-1px;
+  right: 0;
+  color: #fff;
+}
+/* ボックス３**************** */
+.image3{
+  background: url(../img/over-view/series_4_spring__c1oad4ap3k6e_medium_2x.jpg)no-repeat;
+  background-size: cover;
+}
+.image3 > .inner-txt{
+  background: url(../img/over-view/logo_series_4__bugj0mzzcz36_medium_2x.jpg)no-repeat;
+  background-size: contain;
+  z-index: 4;
+  height: 70px;
+  width:150px;
+  margin: 8% auto 0;
+}
+.inner-description {
+  text-align: center;
+}
+.inner-description h2{
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.description-menu{
+  width:200px;
+  margin: 0 auto;
+}
+.description-menu a{
+  display: block;
+  float: left;
+  color:#0070C9;
+  position: relative;
+}
+.description-menu a:first-child{
+  width:130px;
+}
+.description-menu a:last-child{
+  width:70px;
+}
+.description-menu a::after{
+  content:">";
+  position: absolute;
+  right:0;
+  top:-1.5px;
+  color:#0070C9;
+}
+.description-menu a:hover{
+  text-decoration: underline;
+}
+/* ボックス４********** */
+.image4{
+  background: url(../img/over-view/apple_arcade_tile__e69rgw4ia2mq_medium_2x.jpg)no-repeat;
+  background-size: cover;
+}
+.image4 >.inner-txt{
+  padding-top:10%;
+  text-align: center;
+}
+.image4  h1{
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.image4 h2{
+  font-size: 18px;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+.image4 a{
+  color:#fff;
+  position: relative;
+  width:120px;
+  margin: 0 auto;
+  text-align: left;
+}
+.image4 a::after{
+  content: ">";
+  position: absolute;
+  right:0;
+  top:-1.5px;
+  color:#fff;
+}
+.image4 a:hover{
+  text-decoration: underline;
+}
+.image5{
+  background: url(../img/over-view/airpods_magic__geiladfa3kqe_medium_2x.jpg)no-repeat;
+  background-size: cover;
+}
+.image6{
+  background: url(../img/over-view/robot-designer__e67hy9aquaie_medium_2x.jpg)no-repeat;
+  background-size: cover;
 }
